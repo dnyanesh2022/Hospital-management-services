@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!--It is use to show doc type as html(Hyper text marcup language)-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--charset-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System (Home):</title>
+    <link rel="icon" href="./images/Divya.jfif" type="image/x-icon">
+    <style>
+        header {
+            position: fixed;
+            color: magenta;
+            background-color: #050101;
+            /* Light background color */
+            padding: 10px;
+            text-align: center;
+            top: 0px;
+            width: 100%;
+        }
+
+        header a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007bff;
+            /* Link color */
+        }
+
+        header select {
+            margin-left: 10px;
+        }
+
+        video {
+            width: 600px;
+        }
+
+        main {
+            margin-top: 18%;
+        }
+
+        label {
+            display: inline-block;
+            width: 20%;
+        }
+
+        input {
+            width: 100%;
+        }
+    </style>
+    <!--using for desingn internal CSS(case cading stylesgeet)
+    by using attribute name or tag name 
+    inside {} we are doing styling of element-->
+</head>
+<!--head is use to giving title of the html page
+    css of the web element used in body is desingend in head using style tag
+-->
+
+<body>
+    <header>
+        <h1 id="first-heading" title="Hospital Management System">Hospital Management System (HMS):</h1>
+        <nav><a href="./ambulance.html">Emergency ambulance</a></nav>
+        <p>
+            <a href="./index.html">Home</a> |
+            <a href="./contact_us.html">Contact Us</a> |
+            <a href="./services.html">Services</a> |
+            <a href="./about_us.html">About Us</a> |
+            <a href="./register.html">Register</a>
+            &#128512;
+        </p>
+    </header>
+    <!--h1 stand for highest priority of the heading 
+        id shows for uniqueness of element, it should not duplicate. and its identified by #
+        title is used to highlight the element functions and it will used by mouse pointer
+    -->
+    <main>
+
+        <!--this section is showing key componets of HSM-->
+        <section>
+            <div>
+                <h2 title="HMS-Benefits">Benefits</h2>
+            </div>
+            <!--this div is used for second priority highlight"Benefits"-->
+            <div>
+                <p> <b>Efficiency:</b><br> Automates tasks to reduce workload and errors.
+                    <br><b>Patient Care:</b><br> Quick access to patient records for better care.
+                    <br><b>Cost Savings:</b><br> Optimizes resource use and reduces costs.
+                    <br><b>Data Security:</b><br> Ensures secure storage of patient data.
+                    <br><b>Decision Making:</b><br> Provides data analytics for informed decisions.
+                </p>
+            </div>
+            <!--in this div we are showing the paragraph related to the benefits of HSM-->
+        </section>
+        <!--this section is showing Benefits of HSM-->
+        <div>
+            <img src="images/hopital_image.jfif" id="hopital_image">
+            <!--img tag for showing image-->
+        </div>
+        <!--this div storing images-->
+        <div>
+            <h2>Patient Registration Form</h2>
+        </div>
+        <!--this div is used for highlighting the registation from-->
+        <section>
+            <form action="/submit" method="post">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <!--lable used for labling input-->
+                    <input name="full name" id="name" placeholder="Enter Your full name" required>
+                    <!--getting input-->
+                </div>
+                <!--this div for full name input-->
+                <div>
+                    <label>Gender of patient</label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <!--option is used for showing option of dropdown-->
+                    </select>
+
+                    <!--select is used for dropdown-->
+                </div>
+                <div>
+                    <label for="ward_selection"> Select the ward</label>
+                    <select name="ward" id="ward_selection">
+                        <option name="ward" value="">select ward</option>
+                        <option name="ward" id="neurology" value="neurology">neurology</option>
+                        <option name="ward" id="phychology" value="phychology"> phychology</option>
+                        <option name="ward" id="accident" value="accident">accident</option>
+                        <option name="ward" id="multispetiality" value="multispetiality">multispetiality</option>
+                    </select>
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="">Select room</option>
+                        <option name="room" id="general">General</option>
+                        <option name="room" id="special">special</option>
+                    </select>
+                </div>
+                <!--this div for Gender input-->
+                <div>
+                    <label>Contact Number:</label>
+                    <input type="text" id="mobile_no" name="mobile_no" pattern="[0-9]{10}" title="Mobile number must be a 10-digit number" placeholder="+91 0000000000" required>
+                </div>
+                <div>
+                    <label for="adhar_no">Aadhar_no</label>
+                    <input type="text" id="aadhaar" name="aadhaar" pattern="[2-9]{1}[0-9]{11}" title="Aadhaar number must be a 12-digit number starting with 2-9" placeholder="0000 0000 0000" required>
+                </div>
+                <!--this div for Contact no input-->
+                <div>
+                    <label>Address:</label>
+                    <textarea></textarea>
+                </div>
+                <!--this div for Address input-->
+                <div>
+                    <label>Medical History:</label>
+                    <textarea></textarea>
+                </div>
+                <!--this div for Medical history input-->
+                <div>
+                    <button>Register</button>
+                    <!--button having some functions-->
+                </div>
+                <!--this div for submit functionality-->
+            </form>
+            <!--form for creating form-->
+        </section>
+        <!--this section contains registation form-->
+        <div>
+            <div>
+                <h2>Patient Information</h2>
+            </div>
+            <section>
+                <table border="1">
+                    <caption>
+                        patient info
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <!--th shows table highlight-->
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Contact Number</th>
+                            <th>Address</th>
+                            <th>Medical History</th>
+                        </tr>
+                        <!--tr shows table rows-->
+                    </thead>
+                    <!--thead shows table head-->
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <!--td shows table data-->
+                            <td>Gandharv M</td>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>1234567890</td>
+                            <td>Chinchwad</td>
+                            <td colspan="3">Cold</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>pranjal</td>
+                            <td>22</td>
+                            <td>Female</td>
+                            <td>0987654321</td>
+                            <td>Chinchwad</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>rakesh</td>
+                            <td>21</td>
+                            <td>male</td>
+                            <td>0987654331</td>
+                            <td>Chinchwad</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>prajwal</td>
+                            <td>22</td>
+                            <td>male</td>
+                            <td>0987054221</td>
+                            <td>Chinchwad</td>
+                            <td colspan="3">fever</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>shravani</td>
+                            <td>22</td>
+                            <td>Female</td>
+                            <td>0937654321</td>
+                            <td>Chinchwad</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>shreyash</td>
+                            <td>25</td>
+                            <td>male</td>
+                            <td>0917654321</td>
+                            <td>Chinchwad</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="6">number of patients</td>
+                        <td colspan="1">6</td>
+                    </tfoot>
+                    <!--tbody shows table body-->
+                </table>
+                <!--table is using for creating table-->
+            </section>
+            <!--this section contains table containt-->
+    </main>
+</body>
+<!--body tag use for showing the inner body showing on browser having multiple elements like tables, form, list, pictures, and others-->
+
+</html>

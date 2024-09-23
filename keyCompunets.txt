@@ -1,0 +1,15 @@
+ <section>
+            <div>
+                <h2 id="second-heading" title="HMS-components">Key Components</h2>
+            </div>
+            <!--this div is used for second priority highlight"key components"-->
+            <div>
+                <p><b>Patient Management:</b><br> Handles patient registration, appointments, and records.<br>
+                    <b>Clinical Management:</b><br> Manages electronic medical records, lab tests, and pharmacy
+                    inventory.
+                    <br>
+                    <b>Administrative Management:</b> <br>Tracks staff schedules, inventory, and billing. <br>
+                    <b>Financial Management:</b> <br>Oversees billing, insurance claims, and financial reporting. <br>
+                    <b>Support Services: </b><br>Manages housekeeping, maintenance, and cafeteria services.
+                </p>
+            </div>
