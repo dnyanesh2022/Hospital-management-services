@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management System (contact_us):</title>
     <link rel="icon" href="./images/Divya.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         table {
             width: 100%;
@@ -39,22 +40,9 @@
         }
 
         main {
-            margin-top: 30%;
-        }
-
-
-        footer {
-            background-color: rgb(233, 233, 16);
-            display: flex;
-            margin-left: 30%;
-            margin-right: 30%;
-        }
-
-        footer a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-            /* Link color */
+            border-radius: 15px;
+            margin-top: 20%;
+            margin-bottom: 15px;
         }
 
         form div {
@@ -78,19 +66,9 @@
             margin-right: 10px;
         }
 
-        section {
-            margin: 20px 0;
-        }
-
-        #bottom {
-            position: fixed;
-            bottom: 0%;
-        }
-        #contact_us_form{
-            margin-top: 20%;
-        }
-        #hospital_timetable{
-            margin-top: 20%;
+        #bottom{
+            display: inline-block;
+            background-color: rgba(255,215,0,0.5);
         }
     </style>
 </head>
@@ -98,18 +76,21 @@
 <body>
     <header>
         <h1 id="first-heading" title="Hospital Management System">Hospital Management System (HMS):</h1>
-        <p>
-            <a href="./index.html">Home</a> |
-            <a href="./contact_us.html">Contact Us</a> |
-            <a href="./services.html">Services</a> |
-            <a href="./about_us.html">About Us</a> |
-            <a href="./register.html">Register</a>
-        <nav> <a href="#TK">Contact us form</a></nav>
+        <nav>
+            <ul class="links">
+                <li class="links-features"><a href="./index.html">Home</a> |</li>
+                <li class="links-features"><a href="./contact_us.html">Contact Us</a> |</li>
+                <li class="links-features"><a href="./services.html">Services</a> |</li>
+                <li class="links-features"><a href="./about_us.html">About Us</a> |</li>
+                <li class="links-features"><a href="./register.html">Register</a></li>
+                <li><a href="#TK">Contact us form</a></li>
+            </ul>
+        </nav>
         </p>
     </header>
     <main>
         <section id="patient-details">
-            <table border="1">
+            <table>
                 <caption>Live Patient Info</captio>
                 <thead>
                     <tr>
@@ -271,8 +252,9 @@
             <p id="TK">thank you</p>
         </section>
         <section>
-            <h1 id="contact_us_form">Contact Us Form</h1>
+            <h2>Contact Us Form</h2>
             <form method="get" action="about_us.html">
+                <fieldset class="patientRegistation">
                 <div>
                     <label for="fullname">Name</label>
                     <input type="text" id="fullname" name="fullname" required />
@@ -333,12 +315,14 @@
                     <button type="submit">Save Your Query</button>
                     <button type="reset">Reset</button>
                 </div>
+            </fieldset>
             </form>
             <div id="bottom"><a href="terms_and_conditions.html">Terms and Conditions</a>
                 <a href="privacy_policy.html">Privacy Policy</a>
             </div>
         </section>
     </main>
+
 </body>
 
 </html>
