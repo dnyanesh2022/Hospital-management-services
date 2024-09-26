@@ -72,8 +72,12 @@ table,th,td{
     margin-left: auto;
     margin-right: auto;
     color: antiquewhite;
-    border: Outset black;
-    border-radius: 10px;
+    border: black;
+    border-left: 10px groove;
+    border-right: 10px groove;
+    border-top: 5px Outset;
+    border-bottom: 5px Outset;
+    border-radius: 10px Outset;
     border-color: rgb(162, 219, 233);
 }
 caption{
