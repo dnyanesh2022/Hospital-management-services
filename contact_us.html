@@ -5,93 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management System (contact_us):</title>
-    <link rel="icon" href="./images/Divya.jfif" type="image/x-icon">
+    <link rel="icon" href="./images/app logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        table {
-            width: 100%;
-        }
-
-        th,
-        td {
-            border: 1px solid #339eac;
-        }
-
-        header {
-            position: fixed;
-            color: magenta;
-            background-color: #050101;
-            /* Light background color */
-            padding: 10px;
-            text-align: center;
-            top: 0px;
-            width: 100%;
-        }
-
-        header a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007bff;
-            /* Link color */
-        }
-
-        header select {
-            margin-left: 10px;
-        }
-
-        main {
-            border-radius: 15px;
-            margin-top: 20%;
-            margin-bottom: 15px;
-        }
-
-        form div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            margin-bottom: 5px;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-
-        #checkbox label {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        #bottom{
-            display: inline-block;
-            background-color: rgba(255,215,0,0.5);
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <h1 id="first-heading" title="Hospital Management System">Hospital Management System (HMS):</h1>
+        <h1 class="title" title="Hospital Management System">Hospital Management System (HMS):</h1>
+        <img src="./images/app logo.png" alt="app logo" id="logo">
+        <h3>We care your helth, which effect our welth.</h3>
+        </div>
+    </header>
+    <div class="menus">
         <nav>
             <ul class="links">
-                <li class="links-features"><a href="./index.html">Home</a> |</li>
-                <li class="links-features"><a href="./contact_us.html">Contact Us</a> |</li>
-                <li class="links-features"><a href="./services.html">Services</a> |</li>
-                <li class="links-features"><a href="./about_us.html">About Us</a> |</li>
-                <li class="links-features"><a href="./register.html">Register</a></li>
-                <li><a href="#TK">Contact us form</a></li>
+                <li class="links-features" style="position: relative;"><button type="button"><a
+                            href="./index.html">Home</a></button></li>
+                <li class="links-features" style="position: relative;"><button type="button"><a
+                            href="./contact_us.html">Contact Us</a></button></li>
+                <li class="links-features" style="position: relative;"><button type="button"><a
+                            href="./services.html">Services</a></button></li>
+                <li class="links-features" style="position: relative;"><button type="button"><a
+                            href="./about_us.html">About Us</a></button></li>
+                <li class="links-features" style="position: relative; "><button type="button"><a
+                            href="./register.html">Register</a></button></li>
             </ul>
         </nav>
-        </p>
-    </header>
+        <button class="ambulance" type="button"><a href="./ambulance.html">🚑 ambulance
+                button</a></button>
+    </div>
     <main>
         <section id="patient-details">
             <table>
-                <caption>Live Patient Info</captio>
+                <caption>Live Patient Info</caption>
                 <thead>
                     <tr>
                         <th>Patient ID</th>
@@ -251,71 +197,79 @@
             </table>
             <p id="TK">thank you</p>
         </section>
-        <section>
+        <section id="contact_us" style="height: 100vh; padding: 0px;">
             <h2>Contact Us Form</h2>
             <form method="get" action="about_us.html">
                 <fieldset class="patientRegistation">
-                <div>
-                    <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="fullname" required />
-                </div>
-                <div>
-                    <label for="age">Setage
+                    <legend
+                        style="color: rgb(64, 27, 165); font-family: Arial, Helvetica, sans-serif; font-weight: bolder; font-style: italic; display:inline;background-color: palegoldenrod;">
+                        for contact us</legend>
+                    <div>
+                        <label for="fullname"><b>Name</b></label>
+                        <input type="text" id="fullname" name="fullname" placeholder="F-name M-name S-name"
+                            title="enter your fullname" />
+                    </div>
+                    <div>
+                        <label for="age"><b>Age</b>
+                        </label>
                         <span id="ageValue">5</span>
                         <input type="range" id="age" name="age" value="5" min="5" max="100"
                             oninput="updateAgeValue(this.value)">
                         100
-                    </label>
-                    <script>
-                        function updateAgeValue(value) {
-                            document.getElementById('ageValue').textContent = value;
-                        }
-                    </script>
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" />
-                </div>
-                <div>
-                    <label for="querry">Query</label>
-                    <textarea name="querry" id="querry"></textarea>
-                </div>
-                <div>
-                    <label for="medical_history">Medical History
-                        <div id="medical_history">
-                            <label for="Cold">Cold</label>
-                            <input type="checkbox" id="Cold" name="medical_history" value="Cold">
-                            <br />
-                            <label for="fever">Fever</label>
-                            <input type="checkbox" id="fever" name="medical_history" value="Fever">
-                        </div>
-                    </label>
-                </div>
-                <div>
-                    <label for="date">Appointment Date</label>
-                    <input type="datetime-local" name="date" id="date" min="2024-09-21T00:00" title="please enter time after current time" required>
-                </div>
-                <div>
-                    <label for="consultation">
-                        <b>consultation type</b>
-                        <div id="consultation">
-                            <label for="online">
-                                Online
-                                <input type="radio" name="consultation" id="online">
-                            </label><br />
+                        <script>
+                            function updateAgeValue(value) {
+                                document.getElementById('ageValue').textContent = value;
+                            }
+                        </script>
+                    </div>
+                    <div>
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" id="email" name="email" placeholder="nameid@-mail.com" />
+                    </div>
+                    <div>
+                        <label for="querry">Query</label>
+                        <textarea name="querry" id="querry"
+                            placeholder="enter your query about your health or our servises"></textarea>
+                    </div>
+                    <div>
+                        <label for="medical_history">
+                            <b>Medical History</b>
 
-                            <label for="offline">
-                                Offline
-                                <input type="radio" name="consultation" id="offline">
+                            <label for="Cold">Cold
+                                <input type="checkbox" id="Cold" name="medical_history" value="Cold">
                             </label>
-                        </div>
-                    </label>
-                </div>
-                <div>
-                    <button type="submit">Save Your Query</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </fieldset>
+                            <br />
+                            <label for="fever">Fever
+                                <input type="checkbox" id="fever" name="medical_history" value="Fever">
+                            </label>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="date"><b>Appointment Date</b></label>
+                        <input type="datetime-local" name="date" id="date" min="2024-09-21T00:00"
+                            title="please enter time after current time" required>
+                    </div>
+                    <div>
+                        <label for="consultation">
+                            <b>consultation type</b>
+                            <div id="consultation">
+                                <label for="online">
+                                    Online
+                                    <input type="radio" name="consultation" id="online">
+                                </label><br />
+
+                                <label for="offline">
+                                    Offline
+                                    <input type="radio" name="consultation" id="offline">
+                                </label>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Save Your Query</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
             </form>
             <div id="bottom"><a href="terms_and_conditions.html">Terms and Conditions</a>
                 <a href="privacy_policy.html">Privacy Policy</a>

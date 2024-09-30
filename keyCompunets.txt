@@ -21,3 +21,15 @@
                     <br><b>Decision Making:</b><br> Provides data analytics for informed decisions.
                 </p>
             </div>
+            <div>
+                <h2 title="HMS-Benefits">Benefits</h2>
+            </div>
+            <!--this div is used for second priority highlight"Benefits"-->
+            <div>
+                <p> <b>Efficiency:</b><br> Automates tasks to reduce workload and errors.
+                    <br><b>Patient Care:</b><br> Quick access to patient records for better care.
+                    <br><b>Cost Savings:</b><br> Optimizes resource use and reduces costs.
+                    <br><b>Data Security:</b><br> Ensures secure storage of patient data.
+                    <br><b>Decision Making:</b><br> Provides data analytics for informed decisions.
+                </p>
+            </div>

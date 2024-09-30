@@ -5,76 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management System (Services):</title>
-    <link rel="icon" href="./images/Divya.jfif" type="image/x-icon">
+    <link rel="icon" href="./images/app logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        header {
-            position: fixed;
-            color: magenta;
-            background-color: #050101;
-            /* Light background color */
-            padding: 10px;
-            text-align: center;
-            top: 0px;
-            width: 100%;
-        }
-
-        header a {
-            margin: 0 10px;
-            text-decoration-style: solid;
-            color: #007bff;
-            /* Link color */
-        }
-
-        header select {
-            margin-left: 10px;
-        }
-
-        main {
-            margin-top: 20%;
-        }
-
-        footer {
-            display: inline;
-
-        }
-
-        .right {
-
-            float: right;
-            margin-left: 10px;
-        }
-
-        .left {
-            float: left;
-            margin-right: 10px;
-        }
-
-        #youtube {
-            display: block;
-            text-align: right;
-        }
-        .department{
-            width: 50vw;
-        }
-     </style>
 </head>
 
 <body>
     <header>
-        <h1 id="first-heading" title="Hospital Management System">Hospital Management System (HMS):</h1>
-        <nav>
-            <ul class="links">
-                <li class="links-features"><a href="./index.html">Home</a> |</li>
-                <li class="links-features"><a href="./contact_us.html">Contact Us</a> |</li>
-                <li class="links-features"><a href="./services.html">Services</a> |</li>
-                <li class="links-features"><a href="./about_us.html">About Us</a> |</li>
-                <li class="links-features"><a href="./register.html">Register</a></li>
-                <li><a href="#TK">Contact us form</a></li>
-            </ul>
+        <h1 class="title" title="Hospital Management System">Hospital Management System (HMS):</h1>
+        <img src="./images/app logo.png" alt="app logo" id="logo">
+        <h3>We care your helth, which effect our welth.</h3>
+        </div>
     </header>
     <div class="wrapper">
         <main>
+            <div class="menus">
+                <nav>
+                    <ul class="links">
+                        <li class="links-features" style="position: relative;"><button type="button"><a
+                                    href="./index.html">Home</a></button></li>
+                        <li class="links-features" style="position: relative;"><button type="button"><a
+                                    href="./contact_us.html">Contact Us</a></button></li>
+                        <li class="links-features" style="position: relative;"><button type="button"><a
+                                    href="./services.html">Services</a></button></li>
+                        <li class="links-features" style="position: relative;"><button type="button"><a
+                                    href="./about_us.html">About Us</a></button></li>
+                        <li class="links-features" style="position: relative; "><button type="button"><a
+                                    href="./register.html">Register</a></button></li>
+                    </ul>
+                </nav>
+            <button class="ambulance" type="button"><a href="./ambulance.html">🚑 ambulance
+                    button</a></button>
+            </div>
             <section id="neurology" class="doctors">
                 <h2 class="department">Neurology Services</h2>
                 <br>
@@ -129,14 +90,6 @@
                 <p><strong>Mobile Number:</strong> 9876543214</p>
                 <p><strong>Email ID:</strong> ruchita@example.com</p>
             </section>
-            <footer>
-                <section id="youtube">
-                    <iframe width="260" height="115" src="https://www.youtube.com/embed/EX-hctHHetg?si=rbkxGmLLQbeIkYZ5"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="right"></iframe>
-                </section>
-            </footer>
         </main>   
     </div>
 </body>

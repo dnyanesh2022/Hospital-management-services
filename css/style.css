@@ -1,43 +1,45 @@
 html, body {
     height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    align-items:center;
 }
 .title {
     font-family: 'Arial', sans-serif; /* Choose a font family */
-    font-size: 3em; /* Adjust the size */
     color: #e40a0a; /* Set the color */
-    text-align: center; /* Center the text */
+    height: 20%;
+    display: inline;
     text-shadow: 2px 2px 4px #5188b4; /* Add a shadow effect */
-    margin-top: 50px; /* Add some space at the top */
+    top: 0px;
+    padding: 0px;
+}
+#logo{
+    display: inline;
+    height: 50px;
+    width: 50px;
 }
 header {
     opacity: 0.7;
-    position: fixed;
-    text-align: center;
-    background-color: rgba(51, 51, 51, 1);
-    /* Light background color */
+    position: relative;
+    color: magenta;
+    background-color: #050101;
+    text-align: center; /* Center the text */
     top: 0px;
     width: 100%;
-}
-
-header a {
-    margin-left: 0;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
-    /* Link color */
-}
-
-header select {
-    margin-left: 10px;
 }
 main{
     background-color: red;
     text-align: center;
     color: white;
-    flex: 1;
+    width: 100%;
+}
+.menus {
+    text-align: center;
+    background-color: #050101;
+    position: sticky;
+    top: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    width: 100%;
 }
 .patientRegistation{
     color: black;
@@ -101,20 +103,49 @@ footer{
     bottom: 0%;
     height: fit-content;
 }
-.links{ 
-    display: block;
-    opacity: 1;
-}
-.links-features{
-    display: inline-block;
-    opacity: 1;
-}
-.ambulance{
-    display: inline;
-    margin-right: 0%;
-    opacity: 1;
-}
 .doctors{
     display: inline-block;
     border: groove black;
+}
+a:hover{
+    background-color: #e40a0a;
+}
+input::placeholder{
+    color: blue;
+    background-color: lavenderblush;
+}
+input:focus{
+    background-color: blue;
+    color: lavenderblush;
+}
+button:hover{
+    background-color: #e215158e;
+}
+ul{
+    display: inline-block;
+    position: relative;
+    left: 0px;
+}
+li{
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+}
+.ambulance {
+    display: inline-block;
+    position: relative;
+    right: -200px;
+}
+#bottom{
+    display: inline-block;
+    background-color: rgba(255,215,0,0.5);
+}
+label{
+    display: inline-block;
+    width: 30vw;
+}
+#contact_us>label{
+    display: inline-block;
+    width:30%;
 }
